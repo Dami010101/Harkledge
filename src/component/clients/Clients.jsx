@@ -5,6 +5,7 @@ import clientLogo2 from '../../asset/mb.jpg';
 import clientLogo3 from '../../asset/wow.jpg';
 import clientLogo4 from '../../asset/joelamLogo.png';
 import clientLogo5 from '../../asset/gurzla logo1.png';
+import clientLogo6 from '../../asset/image2.jpeg';
 
 const clients = [
     { id: 1, logo: clientLogo1 },
@@ -12,6 +13,7 @@ const clients = [
     { id: 3, logo: clientLogo3 },
     { id: 4, logo: clientLogo4 },
     { id: 5, logo: clientLogo5 },
+    { id: 6, logo: clientLogo6 },
     // Add more client logos as needed
   ];
 
