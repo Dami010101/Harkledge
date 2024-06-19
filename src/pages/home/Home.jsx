@@ -4,6 +4,8 @@ import HomeService from '../../component/homeService/HomeService'
 import Testimonials from '../../component/testimonials/Testimonials'
 import Newsletter from '../../component/newsletter/Newsletter'
 import Clients from '../../component/clients/Clients'
+import '../../component/flyingFairy/FlyingFairy.css'; // Make sure to import the CSS file
+
 
 const Home = () => {
   return (

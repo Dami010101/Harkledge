@@ -1,8 +1,10 @@
 import React from 'react';
+import '../../component/flyingFairy/FlyingFairy.css'; // Make sure to import the CSS file
 
 const Careers = () => {
   return (
     <div className="bg-black text-gold min-h-screen py-12">
+      <div className="fairy" />
       <div className="container mx-auto px-6 lg:px-8">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Careers at Harkledge</h1>

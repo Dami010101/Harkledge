@@ -1,0 +1,26 @@
+@keyframes fly {
+    0% { 
+      transform: translateX(0) scaleX(1); /* Start from the left, normal orientation */
+    }
+    10% { 
+      transform: translateX(0) scaleX(-1); /* Flip horizontally at the start */
+    }
+    90% {
+      transform: translateX(calc(100vw - 40px)) scaleX(-1); /* Move to the right while flipped */
+    }
+    100% {
+      transform: translateX(calc(100vw - 40px)) scaleX(1); /* End at the right, normal orientation */
+    }
+  }
+  
+  .fairy {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+    animation: fly 15s linear infinite;
+    background-image: url('../../asset/noun-fairy-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  

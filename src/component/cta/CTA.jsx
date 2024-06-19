@@ -1,9 +1,11 @@
 import React from 'react';
+import '../../component/flyingFairy/FlyingFairy.css'; // Make sure to import the CSS file
 // import picta from '../../asset/np_Multicultural office handshake celebration_bDjPo8_free.jpg'
 
 const CTA = () => {
   return (
     <div className="relative z-20 flex items-center overflow-hidden bg-black p-2">
+      <div className='fairy'/>
       <div className="container relative flex flex-col sm:flex-row px-6 py-16 mx-auto border-2 border-gold rounded-lg">
         <div className="relative z-20 flex flex-col sm:w-2/3 lg:w-2/5 p-4 border-b-2 sm:border-b-0 sm:border-r-2 border-gold">
           <h1 className="flex flex-col text-2xl font-black leading-none text-gold uppercase font-bebas-neue sm:text-4xl">

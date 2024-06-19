@@ -1,6 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+// import '../../component/fairyDust/FairyDust.css'; // Make sure to import the CSS file
 
 const AboutUs = () => {
+  useEffect(() => {
+    const fairyDustContainer = document.createElement('div');
+    fairyDustContainer.className = 'fairy-dust';
+    document.body.appendChild(fairyDustContainer);
+
+    const particles = 100; // Number of particles
+    for (let i = 0; i < particles; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = `${Math.random() * 100}vw`;
+      particle.style.top = `${Math.random() * 100}vh`;
+      particle.style.animationDelay = `${Math.random() * 5}s`;
+      particle.style.animationDuration = `${5 + Math.random() * 5}s`;
+      fairyDustContainer.appendChild(particle);
+    }
+
+    return () => {
+      document.body.removeChild(fairyDustContainer);
+    };
+  }, []);
+
   return (
     <div className="bg-black py-12">
       <div className="container mx-auto px-6 lg:px-8">
